@@ -1,0 +1,32 @@
+<style>
+  .sebm-google-map-container {
+    height: 300px;
+  }
+</style>
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Google Maps
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-item>
+        <ion-input type="text" id="txtDestinationOutput" placeholder="Origem" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationInput"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" id="txtDestinationInput" placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationOutput"></ion-input>    
+      </ion-item>  
+       
+       <sebm-google-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" [styles]="mapCustomStyles">
+          <!--<sebm-google-map-marker [latitude]="latitude" [longitude]="longitude" [iconUrl]="iconurl">
+                <sebm-google-map-info-window>
+                    <strong>InfoWindow content</strong>
+                </sebm-google-map-info-window>
+              </sebm-google-map-marker>-->
+          <sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
+        </sebm-google-map>  
+       <br>       
+</ion-content>
