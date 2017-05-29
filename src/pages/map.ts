@@ -103,9 +103,7 @@ export class MapPage {
             }
           
               //Update the directions
-              this.vc.updateDirections();  
-              console.log(this.vc);  
-              console.log(this.vc.estimatedDistance);       
+              this.vc.updateDirections();      
               this.zoom = 12;
             });
 

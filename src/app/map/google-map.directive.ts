@@ -52,7 +52,7 @@ export class DirectionsMapDirective {
                               map.setZoom(30);
                               //console.log(me.getcomputeDistance (latLngA, latLngB));
                               //console.log(me.estimatedDistance);
-
+                              document.getElementById('distance').innerHTML = me.estimatedDistance;
                             } else {
                               console.log('Directions request failed due to ' + status);
                             }
