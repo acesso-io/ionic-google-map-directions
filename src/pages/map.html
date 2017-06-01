@@ -14,10 +14,10 @@
 
 <ion-content padding>
       <ion-item>
-        <ion-input type="text" id="txtDestinationOutput" placeholder="Origem" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationInput"></ion-input>
+        <ion-input type="text" id="txtOrigin" placeholder="Origem" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationInput"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input type="text" id="txtDestinationInput" placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationOutput"></ion-input>    
+        <ion-input type="text" id="txtDestination" placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" [formControl]="destinationOutput"></ion-input>    
       </ion-item>  
        
        <sebm-google-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" [styles]="mapCustomStyles">

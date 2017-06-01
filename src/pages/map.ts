@@ -63,13 +63,13 @@ export class MapPage {
       
       //load Places Autocomplete
       this.mapsAPILoader.load().then(() => {
-          let inputOrigin = document.getElementById('txtDestinationInput').getElementsByTagName('input')[0];
+          let inputOrigin = document.getElementById('txtOrigin').getElementsByTagName('input')[0];
           //let autocompleteInput = new google.maps.places.Autocomplete(this.pickupInputElementRef.nativeElement, {
           let autocompleteInput = new google.maps.places.Autocomplete(inputOrigin, {          
             types: ["address"]
           });
            
-          let inputDestination = document.getElementById('txtDestinationOutput').getElementsByTagName('input')[0];     
+          let inputDestination = document.getElementById('txtDestination').getElementsByTagName('input')[0];     
           //let autocompleteOutput = new google.maps.places.Autocomplete(this.pickupOutputElementRef.nativeElement,{     
           let autocompleteOutput = new google.maps.places.Autocomplete(inputDestination,{  
             types: ["address"]
