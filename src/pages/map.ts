@@ -24,8 +24,8 @@ export class MapPage {
 
     public latitude: number;
     public longitude: number;
-    public destinationInput: FormControl;
-    public destinationOutput: FormControl;
+    public originForm: FormControl;
+    public destinationForm: FormControl;
     public zoom: number;
     public iconurl: string;
     public mapCustomStyles : any;
@@ -56,8 +56,8 @@ export class MapPage {
  
      // this.mapCustomStyles = this.getMapCusotmStyles();
       //create search FormControl
-      this.destinationInput = new FormControl();
-      this.destinationOutput = new FormControl();
+      this.originForm = new FormControl();
+      this.destinationForm = new FormControl();
       //set current position
       this.setCurrentPosition();
       
